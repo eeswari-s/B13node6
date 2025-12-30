@@ -9,13 +9,14 @@ dotenv.config();
 const app =  express();
 
 
+
 connectDB();
 
 app.get("/",(req, res)=>{
     res.send("server is running");
 });
 
-app.get("/api/users",useRoutes);
+app.get("/api/users" ,useRoutes);
 
 const PORT = process.env.PORT ||3000;
 
